@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript calculator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <script src = "script.js"></script>
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <div class = "container-fluid background">
+            <h1 class = "position-absolute top-0 start-50 translate-middle-x mt-5">JavaScript calculator</h1>
+            <div class = "d-grid gap-2 col-3 mx-auto border border-2 shadow-lg p-3 mb-5 bg-body rounded position-absolute top-50 start-50 translate-middle">
+                <div  id = "display" class = "d-grid gap-2 d-md-flex justify-content-md-end">0</div>
+                <div class = "row-cols-sm-auto btn-group">
+                    <button type="button" class="btn btn-success" id="equals" onclick="clickEquals()">=</button>
+                </div>
+                <div class = "row-cols-sm-auto btn-group">
+                    <button type="button" class="btn btn-outline-info btn-lg" id="seven" onclick="clickSeven()">7</button>
+                    <button type="button" class="btn btn-outline-info btn-lg" id="eight" onclick="clickEight()">8</button>
+                    <button type="button" class="btn btn-outline-info btn-lg" id="nine" onclick="clickNine()">9</button>
+                    <button type="button" class="btn btn-outline-info btn-dark btn-lg" id="add" onclick="clickAdd()">+</button>
+                </div>
+                <br />
+                <div class = "row-cols-sm-auto btn-group">
+                    <button type="button" class="btn btn-outline-info btn-lg" id="four" onclick="clickFour()">4</button>
+                    <button type="button" class="btn btn-outline-info btn-lg" id="five" onclick="clickFive()">5</button>
+                    <button type="button" class="btn btn-outline-info btn-lg" id="six" onclick="clickSix()">6</button>
+                    <button type="button" class="btn btn-outline-info btn-dark btn-lg" id="subtract" onclick="clickSubtract()">-</button>
+                </div>
+                <br />
+                <div class = "row-cols-sm-auto btn-group">
+                    <button type="button" class="btn btn-outline-info btn-lg" id="one" onclick="clickOne()">1</button>
+                    <button type="button" class="btn btn-outline-info btn-lg" id="two" onclick="clickTwo()">2</button>
+                    <button type="button" class="btn btn-outline-info btn-lg" id="three" onclick="clickThree()">3</button>
+                    <button type="button" class="btn btn-outline-info btn-dark btn-lg" id="divide" onclick="clickDivide()">/</button>
+                </div>
+                <br />
+                <div class = "row-cols-sm-auto btn-group">
+                    <button type="button" class="btn btn-outline-info btn-lg btn-dark" id="decimal" onclick="clickDecimal()">.</button>
+                    <button type="button" class="btn btn-outline-info btn-lg" id="zero" onclick="clickZero()">0</button>
+                    <button type="button" class="btn btn-outline-info btn-lg btn-dark" id="clear" onclick="clickClear()">C</button>
+                    <button type="button" class="btn btn-outline-info btn-dark btn-lg" id="multiply" onclick="clickMultiply()">*</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
